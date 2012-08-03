@@ -1,0 +1,20 @@
+development: &default
+  adapter: sqlite3
+  database: hacker_engine_development
+  min_messages: WARNING
+  host: localhost
+
+staging:
+  <<: *default
+  database: hacker_engine_staging
+
+production:
+  <<: *default
+  database: hacker_engine_production
+
+test: &test
+  <<: *default
+  database: hacker_engine_test<%= ENV['TEST_ENV_NUMBER'] %>
+
+cucumber:
+  <<: *test

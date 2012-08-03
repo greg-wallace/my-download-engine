@@ -1,0 +1,4 @@
+tmp/
+bin/
+*.sqlite3
+*.log

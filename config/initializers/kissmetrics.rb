@@ -1,0 +1,5 @@
+if Rails.env.production?
+  KISSMETRICS_API_KEY = "YOUR_PRODUCTION_KEY"
+else
+  KISSMETRICS_API_KEY = "YOUR_DEVELOPMENT_KEY"
+end

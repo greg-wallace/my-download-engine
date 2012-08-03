@@ -1,0 +1,58 @@
+== Welcome to Hacker Engine
+
+Thanks for purchasing Hacker Engine! This repo contains all the code you need to start selling digital goods.
+
+To get started, follow the steps below. If you have trouble, or find any part of the instructions confusing, please open an issue and we'll try to get you help as quickly as possible.
+
+= Getting Started
+
+== Sign up for associated services
+
+1. Sign up for Stripe at stripe.com. Grab your API keys from the Account Settings page and fill them in in `config/initializers/stripe.rb`. (make sure to assign the right keys for production vs development)
+
+2. Sign up for Fetch at fetchapp.com. Upload the digital good you want to deliver to users who pay you. Then add your API keys: found at the bottom of the screen at http://YOURAPPNAME.fetchapp.com/admin/settings/payments. Enter those in `config/initializers/fetch.rb`. Also make sure FETCH_SKU matches the SKU of the product you want to send out.
+
+3. Sign up for KISSmetrics at kissmetrics.com. Their service is optional but highly-recommended. Create two sites under your account: YOURAPP Production and YOURAPP Development. Update your API keys in `config/initializers/kissmetrics.rb` (make sure to assign the right keys for production vs development)
+
+== Get the app running
+
+Our preferred way to deploy Rails apps is on Heroku. If you prefer to host your app elsewhere, you can skip step 1 and use any database you choose.
+
+1. Install postgres. On OS X, the best way to do this is by installing homebrew and running `brew install postgres`
+
+2. Run `bundle install`
+
+3. Create your databases by running `rake db:create:all` (note: I'm leaving off `bundle exec` in this and subsequent examples, but you may need to prefix your commands with it.)
+
+4. Run migrations: `rake db:migrate`
+
+== Confirm everything is working
+
+1. Run the app's tests: `bundle exec rake`.
+
+2. Verify Stripe integration: after a successful test run, you should see a payment in Stripe's test dashboard (make sure the slider at the top left is on Test and go to Payments). Running your test suite hits Stripe's test servers to make damn sure you can get paid. You can also use a credit card of 4242424242424242, any CVV, and any date in the future to test successful transactions. For more information, see their EXCELLENT docs here: https://stripe.com/docs
+
+3. Verify KISSmetrics integration: open up their Live tab (farthest to the right) and boot your app in development mode. You should see events coming in like Viewed Home Page and Visited Site.
+
+4. Verify Fetch integration: sadly, fetch has no sandbox option. To test integration, you'll need to boot in production mode and complete a purchase. You should get an email at the address you specified at checkout with a link to download your product.
+
+== Digital Delivery
+
+To enable digital deliveries, see `app/controllers/orders_controller.rb`
+
+== Deploy
+
+As mentioned, we prefer heroku, see their docs here: http://devcenter.heroku.com/articles/rails3
+
+== Other stuff
+
+1. You'll probably want an SSL certificate to encrypt your checkout page. GoDaddy's are cheap ($70/year) but...it's GoDaddy. DigiCert is less odious but more expensive. Be aware that to get your cert, you'll likely have to prove that your business is registered. 
+
+== FAQ
+
+  * How do I know I got an order?
+    * You'll get an email from Stripe whenever you're paid
+
+== How To Get Help
+
+If you have any trouble, please open an issue on this repo and we'll respond as quickly as we can.
