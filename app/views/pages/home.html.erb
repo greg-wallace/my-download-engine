@@ -1,10 +1,8 @@
 <div class="container">
-  <div class="hero-unit">
-    <h1>This is my big headline</h1>
-  </div>
+  
 
   <div class="row">
-    <div class="span8">
+    <div class="span12">
       <div id="myCarousel" class="carousel slide">
         <div class="carousel-inner">
           <div class="item active">
@@ -23,10 +21,6 @@
         <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
         <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
       </div>
-    </div>
-
-    <div class="span4">
-      <p><%= link_to 'Get access now', new_order_path, class: 'btn btn-primary btn-large call-to-action' %></p>
     </div>
   </div>
 
@@ -53,8 +47,7 @@
       </blockquote>
 
       <blockquote>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis.</p>
-        <small>Someone famous in <cite title="">Body of work</cite></small>
+	      <p><%= link_to 'Download Now', new_order_path, class: 'btn btn-primary btn-large call-to-action' %></p>
       </blockquote>
     </div>
   </div>
