@@ -35,6 +35,25 @@ module HackerEngine
 
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"
+    
+    
+    
+    # mail contact form.
+    
+    
+    config.action_mailer.smtp_settings = {
+      :address              => "smtp.gmail.com",
+      :port                 => 587,
+      :domain               => "icodeforu.com",
+      :user_name            => "greg@icodeforu.com",
+      :password             => "OmyKiss135",
+      :authentication       => :plain,
+      :enable_starttls_auto => true
+    }
+
+    config.action_mailer.default_url_options = {
+      :host => "yourdomain.dev"
+    }
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]

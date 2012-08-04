@@ -1,0 +1,44 @@
+ <div class="container">
+		<div class="page-header">
+	  <h1>Contact Us</h1>
+	  <h2>Some sub-text could go here</h2>
+	</div>
+
+<div class="row">
+  <div class="span12">
+
+	<%= form_for @message, :url => contact_path do |form| %>
+	  <fieldset class="fields">
+	    <div class="field">
+	      <%= form.label :name %>
+	      <%= form.text_field :name %>
+	    </div>
+
+	    <div class="field">
+	      <%= form.label :email %>
+	      <%= form.text_field :email %>
+	    </div>
+	    <div class="field">
+	      <%= form.label :subject %>
+	      <%= form.text_field :subject %>
+	    </div>
+
+	    <div class="field">
+	      <%= form.label :body %>
+	      <%= form.text_area :body %>
+	    </div>
+	  </fieldset>
+
+	  <fieldset class="actions">
+	    <%= form.submit "Send" , class: "btn btn-large btn-primary" %>
+	  </fieldset>
+	<% end %>
+</div>
+</div>
+    <br />
+ <hr>
+
+  <footer>
+    <p>&copy; Company 2012</p>
+  </footer>
+</div><!-- /container -->

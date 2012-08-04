@@ -1,6 +1,8 @@
 HackerEngine::Application.routes.draw do
   match '/about',   to: 'static_pages#about'
-  match '/contact',   to: 'static_pages#contact'
+  
+  match '/contact' => 'contact#new', :as => 'contact', :via => :get
+  match '/contact' => 'contact#create', :as => 'contact', :via => :post
 
   root :to => 'pages#home'
 

@@ -1,5 +1,5 @@
 class Order < ActiveRecord::Base
-  PRODUCT_PRICE_IN_CENTS = 14900
+  PRODUCT_PRICE_IN_CENTS = 10000
 
   attr_accessor :stripe_card_token
 
