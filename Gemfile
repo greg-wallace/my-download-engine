@@ -7,6 +7,7 @@ gem 'stripe'
 gem 'fetchapp-api-ruby'
 gem 'kumade'
 gem 'bourbon'
+gem 'pg'
 
 group :development do
   gem 'spork', '~> 1.0rc'
@@ -17,7 +18,6 @@ end
 
 group :development, :test do
   gem 'rspec-rails'
-  gem 'sqlite3'
 end
 
 group :assets do
