@@ -10,7 +10,7 @@
 </div>
 
 <div class="row">
-  <div class="span8">
+  <div class="span6">
 <%= form_for @order, html: { class: 'form-horizontal well' } do |f| %>
   <fieldset>
 
@@ -54,12 +54,7 @@
       </div>  
     </div>
 
-    <div class="control-group">
-      <%= f.label :github_username, class: 'control-label' %>
-      <div class="controls">
-        <%= f.text_field :github_username, class: 'span3' %>
-      </div>
-    </div>
+   
   </fieldset>
 
   <fieldset>

@@ -4,7 +4,7 @@ class Order < ActiveRecord::Base
   attr_accessor :stripe_card_token
 
   validates :email, presence: true
-  validates :github_username, presence: true
+ # validates :github_username, presence: true
   validates :first_name, presence: true
   validates :last_name, presence: true
 

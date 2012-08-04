@@ -5,31 +5,34 @@
 	</div>
 
 <div class="row">
-  <div class="span6 offset3">
+  <div class="span6">
 
-	<%= form_for @message, :url => contact_path do |form| %>
+	<%= form_for @message, :url => contact_path, html: { class: 'well' } do |form| %>
 	  <fieldset class="fields">
+		
+		<legend>Your information</legend>
+	    
 	    <div class="field">
 	      <%= form.label :name %>
-	      <%= form.text_field :name %>
+	      <%= form.text_field :name , class: 'span3' %>
 	    </div>
 
 	    <div class="field">
 	      <%= form.label :email %>
-	      <%= form.text_field :email %>
+	      <%= form.text_field :email , class: 'span3' %>
 	    </div>
 	    <div class="field">
 	      <%= form.label :subject %>
-	      <%= form.text_field :subject %>
+	      <%= form.text_field :subject , class: 'span3' %>
 	    </div>
+	    <legend>Your message</legend>
 
 	    <div class="field">
-	      <%= form.label :body %>
-	      <%= form.text_area :body %>
+	      <%= form.text_area :body , class: 'span5' %>
 	    </div>
 	  </fieldset>
 
-	  <fieldset class="actions">
+	  <fieldset class="form-actions"">
 	    <%= form.submit "Send" , class: "btn btn-large btn-primary" %>
 	  </fieldset>
 	<% end %>
