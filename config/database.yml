@@ -1,5 +1,5 @@
 development: &default
-  adapter: postgres
+  adapter: postgresql
   database: hacker_engine_development
   min_messages: WARNING
   host: localhost
