@@ -1,11 +1,11 @@
 development: &default
-  adapter: sqlite3
+  adapter: postgresql
   database: hacker_engine_development
   min_messages: WARNING
   host: localhost
 
 staging:
-  <<: *default
+    <<: *default
   database: hacker_engine_staging
 
 production:
