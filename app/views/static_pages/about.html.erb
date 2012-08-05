@@ -1,73 +1,94 @@
-    <div class="container">
-    	<div class="page-header">
-		  <h1>A little about our Company</h1>
-		  <h2>Some sub-text could go here</h2>
-		</div>
+<% provide(:title, 'About') %>
+<div class="container">
+	<div class="page-header">
+		<h1>A little about our Company</h1>
 
-    <div class="row">
-        <div class="span6">
-            <h2>The Product</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-        </div>
-        <div class="span6">
-            <h2>The Vision</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-        </div>
-    </div><!-- /row -->
-    <br /><br />
-    <div class="row">
-        <div class="span12">
-            <h2>The Team</h2><br />
-        </div>
-    </div>
-    <div class="row">
-        <div class="span12">
-        <ul class="thumbnails">
-            <li class="span3">
-            <div class="thumbnail about">
-                <img src="http://placehold.it/260x180" alt="">
-                <div class="caption">
-                <h5>Mr. Miyagi</h5>
-                <p>"Wax on. Wax off." "Use head for something other than target."</p>
-                </div>
-            </div>
-            </li>
-            <li class="span3">
-            <div class="thumbnail about">
-                <img src="http://placehold.it/260x180" alt="">
-                <div class="caption">
-                <h5>Daniel-San</h5>
-                <p>When he is not complaining, Daniel does a great Crane.</p>
-                </div>
-            </div>
-            </li>
-            <li class="span3">
-            <div class="thumbnail about">
-                <img src="http://placehold.it/260x180" alt="">
-                <div class="caption">
-                <h5>Ali Mills</h5>
-                <p>Ali likes to hang out with Daniel when she's not at UCLA football games.</p>
-                </div>
-            </div>
-            </li>
-            <li class="span3">
-            <div class="thumbnail about">
-                <img src="http://placehold.it/260x180" alt="">
-                <div class="caption">
-                <h5>Lucille Larusso</h5>
-                <p>A great manager and an awesome single mom.</p>
-                </div>
-            </div>
-            </li>
-        </ul>
-        </div>
-    </div><!-- /row -->
-    <br />
- <hr>
+		<h2>Some sub-text could go here</h2>
+	</div>
 
-  <footer>
-    <p>&copy; Company 2012</p>
-  </footer>
-</div><!-- /container -->
+	<div class="row">
+		<div class="span6">
+			<h2>The Product</h2>
+
+			<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+				condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec
+				sed odio dui.</p>
+
+				<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+					galley of type and scrambled it to make a type specimen book.</p>
+				</div>
+				<div class="span6">
+					<h2>The Vision</h2>
+
+					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+						condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec
+						sed odio dui.</p>
+
+						<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+							galley of type and scrambled it to make a type specimen book.</p>
+						</div>
+					</div>
+					<!-- /row -->
+					<br/><br/>
+
+					<div class="row">
+						<div class="span12">
+							<h2>The Team</h2><br/>
+						</div>
+					</div>
+					<div class="row">
+						<div class="span12">
+							<ul class="thumbnails">
+								<li class="span3">
+									<div class="thumbnail about">
+										<img src="/assets/260x180.gif" alt="">
+
+										<div class="caption">
+											<h5>Mr. Miyagi</h5>
+
+											<p>"Wax on. Wax off." "Use head for something other than target."</p>
+										</div>
+									</div>
+								</li>
+								<li class="span3">
+									<div class="thumbnail about">
+										<img src="/assets/260x180.gif" alt="">
+
+										<div class="caption">
+											<h5>Daniel-San</h5>
+
+											<p>When he is not complaining, Daniel does a great Crane.</p>
+										</div>
+									</div>
+								</li>
+								<li class="span3">
+									<div class="thumbnail about">
+										<img src="/assets/260x180.gif" alt="">
+
+										<div class="caption">
+											<h5>Ali Mills</h5>
+
+											<p>Ali likes to hang out with Daniel when she's not at UCLA football games.</p>
+										</div>
+									</div>
+								</li>
+								<li class="span3">
+									<div class="thumbnail about">
+										<img src="/assets/260x180.gif" alt="">
+
+										<div class="caption">
+											<h5>Lucille Larusso</h5>
+
+											<p>A great manager and an awesome single mom.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- /row -->
+
+					<%= render '/shared/footer' %>
+
+
+				</div><!-- /container -->

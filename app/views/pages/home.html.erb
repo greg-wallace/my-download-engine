@@ -1,62 +1,96 @@
+<% provide(:title, 'Home') %>
 <div class="container">
-  
+	<div class="row">
+		<div class="span12">
+			<div id="myCarousel" class="carousel slide">
+				<div class="carousel-inner">
+					<div class="item active">
+						<%= image_tag("carousel-1.png") %>
+						<div class="carousel-caption">
+							<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+						</div>
+					</div>
+					<div class="item">
+						<%= image_tag("carousel-2.png") %>
+						<div class="carousel-caption">
+							<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+						</div>
+					</div>
+				</div>
+				<a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+				<a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="well">
 
-  <div class="row">
-    <div class="span12">
-      <div id="myCarousel" class="carousel slide">
-        <div class="carousel-inner">
-          <div class="item active">
-            <%= image_tag("carousel-1.png") %>
-            <div class="carousel-caption">
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
-            </div>
-          </div>
-          <div class="item">
-            <%= image_tag("carousel-2.png") %>
-            <div class="carousel-caption">
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
-            </div>
-          </div>
-        </div>
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
-      </div>
-    </div>
-  </div>
+	<div class="row">
+		<div class="span7">
+			<h2>Some really enticing <span class='grey'>bullshit</span> text could go here - </h2>
+		</div>
+		<div class="span3">
+			<%= link_to 'Download Now', new_order_path, class: 'span4 pull-right btn btn-primary btn-large call-to-action' %>
+		</div>
+	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="span8">
+		<div class="row">
+			<div class="span4">
+				<h2><span class='grey'>Heading</span> One</h2>
+				<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+				<h2><span class='grey'>Heading</span> Three</h2>
+				<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+			</div>
+			<div class="span4">
+				<h2><span class='grey'>Heading</span> Two</h2>
+				<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+				<h2><span class='grey'>Heading</span> Four</h2>
+				<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+			</div>
+		</div>
+	</div>
+	<div class="span4">
+		<div class="alert alert-info">
+			<h2><span class='grey'>Heading</span> One</h2>
 
-  <hr>
+			<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+			<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+		</div>
+	</div>
+</div>
 
-  <div class="row">
-    <div class="span8">
-      <div class="row">
-        <div class="span4">
-          <h2>Heading</h2>
-           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-        </div>
-        <div class="span4">
-          <h2>Heading</h2>
-           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-       </div>
-      </div>
-    </div>
 
-    <div class="span4">
-      <blockquote>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis.</p>
-        <small>Someone famous in <cite title="">Body of work</cite></small>
-      </blockquote>
+<div class="row">
+	<div class="span8">
+		<div class="row">
+			<div class="span4">
+				<h2><span class='grey'>Heading</span> Five</h2>
+				<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+			</div>
+			<div class="span4">
+				<h2><span class='grey'>Heading</span> Six</h2>
+				<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+			</div>
+		</div>
+	</div>
 
-      <blockquote>
-	      <p><%= link_to 'Download Now', new_order_path, class: 'btn btn-primary btn-large call-to-action' %></p>
-      </blockquote>
-    </div>
-  </div>
+	<div class="span4">
+		<h2><span class='grey'>Heading</span> Seven</h2>
+		<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+	</div>
+</div>
 
-  <hr>
+<hr>
+<div class='row'>
+	<div class='span12'><br />
+		<p class='pull-right'>&copy; Company 2012</hp>
+		</div>
+	</div>
 
-  <footer>
-    <p>&copy; Company 2012</p>
-  </footer>
+
 
 </div> <!-- /container -->
 

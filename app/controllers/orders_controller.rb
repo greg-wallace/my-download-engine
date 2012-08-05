@@ -8,7 +8,7 @@ class OrdersController < ApplicationController
 
     if @order.save_with_payment
       # To enable digital download delivery, uncomment the line below and see lib/download_deliverer.rb
-      # DownloadDeliverer.deliver_download
+       DownloadDeliverer.deliver_download
 
       redirect_to order_path(@order)
     else

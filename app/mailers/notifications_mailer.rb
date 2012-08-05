@@ -1,6 +1,6 @@
 class NotificationsMailer < ActionMailer::Base
 
-  default :from => "noreply@icodeforu.com"
+  default :from => "web@icodeforu.com"
   default :to => "greg@icodeforu.com"
 
   def new_message(message)

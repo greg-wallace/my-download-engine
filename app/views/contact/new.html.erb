@@ -1,60 +1,70 @@
- <div class="container">
-		<div class="page-header">
-	  <h1>Contact Us</h1>
-	  <h2>Some sub-text could go here</h2>
-	</div>
-
-<div class="row">
-  <div class="span6">
-
-	<%= form_for @message, :url => contact_path, html: { class: 'form-horizontal well' } do |form| %>
-	  <fieldset class="fields">
-		
-		<legend>Your information</legend>
-	    
-	    <div class="control-group">
-	      <%= form.label :name , class: 'control-label' %>
-	      <div class="controls">
-	      <%= form.text_field :name , class: 'span3' %>
-	    </div>
-    </div>
-
-	    <div class="control-group">
-	      <%= form.label :email , class: 'control-label'%>
-	      <div class="controls">
-	      <%= form.text_field :email , class: 'span3' %>
-	    </div>
-	</div>
-    
-	    <div class="control-group">
-	      <%= form.label :subject , class: 'control-label' %>
-	      <div class="controls">
-	      <%= form.text_field :subject , class: 'span3' %>
-	    </div>
-	</div>
-    
-	    <legend>Your message</legend>
-
-	    <div class="field">
-	      <%= form.text_area :body, rows: '5' %>
-	    </div>
-	  </fieldset>
-
-	  <fieldset class="form-actions">
-		  <div class="controls">
-	    <%= form.submit "Send it now!" , class: "pull-right btn btn-large btn-primary" %>
-	</div>
+<% provide(:title, 'Contact') %>
+<div class="container">
 	
-	  </fieldset>
-	 <p class="quiet-text">If you're unsatisfied with Hacker Engine for any reason, we'll happily refund your money.</p>
-	  <p class="quiet-text">Got questions that aren't answered here? <%= mail_to 'support@hackerengine.com', 'Email us' %>, or ask on <%= link_to 'twitter', 'http://twitter.com/hackerengine' %>.</p>
-	<% end %>
-</div>
-</div>
-    <br />
- <hr>
+	<div class="page-header"><h1>Contact Us</h1>
 
-  <footer>
-    <p>&copy; Company 2012</p>
-  </footer>
-</div><!-- /container -->
+		<h2>Some sub-text could go
+			here</h2></div>
+
+			<div class="row">
+				<div class="span7">
+					<div class="well-light">
+
+						<%= form_for @message, :url => contact_path, html: {class: 'form-horizontal'} do |form| %>
+						<fieldset class="fields">
+
+							<legend>Your information</legend>
+
+							<div class="control-group"> <%= form.label :name, class: 'control-label' %>
+								<div class="controls"> <%= form.text_field :name,
+								class: 'span3' %> </div>
+							</div>
+
+							<div class="control-group"> <%= form.label :email, class: 'control-label' %>
+								<div class="controls"> <%= form.text_field :email,
+								class: 'span3' %> </div>
+							</div>
+
+							<div class="control-group"> <%= form.label :subject, class: 'control-label' %>
+								<div class="controls"> <%= form.text_field :subject , class: 'span3' %> </div>
+							</div>
+
+							<legend>Your message</legend>
+
+							<div class="field">
+								 <%= form.label :body %> <%= form.text_area :body , rows: '6', class: 'span6' %> </div>
+						</fieldset>
+
+						<fieldset class="form-actions"> <%= form.submit "Send it now!", class: "span3 btn btn-large btn-primary" %> </fieldset>
+						<p class="quiet-text">If you're unsatisfied with Hacker Engine for any reason, we'll happily refund your
+							money.</p>
+
+							<p
+							class="quiet-text">Got questions that aren't answered
+							here? <%= mail_to 'support@hackerengine.com', 'Email us' %>, or ask on <%=
+							link_to 'twitter', 'http://twitter.com/hackerengine' %>.</p>
+
+							<% end %> </div>
+						</div>
+
+						<div class="span5">
+							<div class="alert alert-info"><h2><span class='grey'>Heading</span> One</h2>
+
+								<p>Lorem Ipsum is simply dummy
+									text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
+									since the 1500s, when an
+									unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only
+									five centuries, but
+									also the leap into electronic typesetting, remaining essentially unchanged.</p>
+
+									<p> It was popularised in the 1960s with the release
+										of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+										Aldus PageMaker
+										including versions of Lorem Ipsum.</p></div>
+									</div>
+
+								</div>
+
+								<%= render 'shared/footer' %>
+
+							</div><!-- /container -->
