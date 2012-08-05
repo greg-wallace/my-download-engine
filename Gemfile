@@ -7,7 +7,7 @@ gem 'stripe'
 gem 'fetchapp-api-ruby'
 gem 'kumade'
 gem 'bourbon'
-gem 'sqlite3'
+gem 'pg'
 
 group :development do
   gem 'spork', '~> 1.0rc'
