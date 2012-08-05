@@ -1,13 +1,12 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.1'
+gem 'rails', '3.2.2'
 
 gem 'jquery-rails'
 gem 'stripe'
 gem 'fetchapp-api-ruby'
 gem 'kumade'
 gem 'bourbon'
-gem 'sqlite3'
 
 group :development do
   gem 'spork', '~> 1.0rc'
@@ -19,6 +18,8 @@ end
 
 group :development, :test do
   gem 'rspec-rails'
+  gem 'sqlite3'
+  
 end
 
 group :assets do
@@ -34,4 +35,8 @@ group :test do
   gem 'launchy'
   gem 'shoulda-matchers'
   gem 'bourne'
+end
+
+group :production do
+  gem 'pg'
 end

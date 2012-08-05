@@ -31,11 +31,11 @@
 
 							<legend>Your message</legend>
 
-							<div class="field">
-								 <%= form.label :body %> <%= form.text_area :body , rows: '6', class: 'span6' %> </div>
+							<div class="field"><%= form.text_area :body , rows:'5' , class: 'span6' %> </div>
 						</fieldset>
 
 						<fieldset class="form-actions"> <%= form.submit "Send it now!", class: "span3 btn btn-large btn-primary" %> </fieldset>
+						<% end %>
 						<p class="quiet-text">If you're unsatisfied with Hacker Engine for any reason, we'll happily refund your
 							money.</p>
 
@@ -44,7 +44,7 @@
 							here? <%= mail_to 'support@hackerengine.com', 'Email us' %>, or ask on <%=
 							link_to 'twitter', 'http://twitter.com/hackerengine' %>.</p>
 
-							<% end %> </div>
+							 </div>
 						</div>
 
 						<div class="span5">

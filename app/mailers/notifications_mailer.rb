@@ -5,7 +5,9 @@ class NotificationsMailer < ActionMailer::Base
 
   def new_message(message)
     @message = message
-    mail(:subject => "[icodeforu.com] #{message.subject}")
+    mail(:subject => "[icodeforu.com] #{message.subject}" ,  
+    :body => "#{message.body}")
+    
   end
 
 end
