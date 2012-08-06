@@ -9,7 +9,8 @@ staging:
   database: hacker_engine_staging
 
 production:
-  adapter: postgresql
+  <<: *default
+  #adapter: postgresql
   database: hacker_engine_production
 
 test: &test
