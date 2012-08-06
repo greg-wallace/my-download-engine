@@ -22,6 +22,7 @@ body {
 /* Tweak navbar brand link to be super sleek
 -------------------------------------------------- */
 .navbar-fixed-top .brand {
+  letter-spacing: 1px;
   padding-right: 0;
   padding-right: 20px;
   margin-left: 20px;
@@ -100,6 +101,13 @@ color: #999;
 
 
 
+/*   black span    */
+
+.black {
+color: #333;
+}
+
+
 /***********well-light********************/
 .well-light{
   min-height: 20px;
@@ -131,6 +139,33 @@ color: #999;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+
+
+/***********blue-banner********************/
+
+.blue-banner {
+text-align:center;
+padding: 14px 35px 14px 14px;
+margin-bottom: 28px;
+}
+
+
+
+/***********hero unit p********************/
+
+.hero-unit p {
+font-size: 24px;
+font-weight: 200;
+line-height: 28px;
+margin-top: 10px;
+color: inherit;
+}
+
+
+.hero-unit {
+margin-top:15px;
 }
 
 
