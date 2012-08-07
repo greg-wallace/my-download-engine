@@ -1,68 +1,26 @@
-<% provide(:title, 'Contact') %>
-<div class="container">
-	
-	<div class="page-header"><h1>Contact Us</h1>
-
-		<h2>we're here to help</h2></div>
-
-			<div class="row">
-				<div class="span8">
-					<div class="well-light">
-
-						<%= form_for @message, :url => contact_path, html: {class: 'form-horizontal'} do |form| %>
-						<fieldset class="fields">
-
-							<legend>Your information</legend>
-
-							<div class="control-group"> <%= form.label :name, class: 'control-label' %>
-								<div class="controls"> <%= form.text_field :name,
-								class: 'span4' %> </div>
-							</div>
-
-							<div class="control-group"> <%= form.label :email, class: 'control-label' %>
-								<div class="controls"> <%= form.text_field :email,
-								class: 'span4' %> </div>
-							</div>
-
-							<div class="control-group"> <%= form.label :subject, class: 'control-label' %>
-								<div class="controls"> <%= form.text_field :subject , class: 'span4' %> </div>
-							</div>
-
-							<legend>Your message</legend>
-
-								<div class="control-group">
-									<div class="controls">
-									<%= form.text_area :body , rows:'5' , class: 'span4' %> </div>
-						</fieldset>
-
-						<fieldset class="form-actions">
-						<%= form.submit "Send it now!", class: "span4 btn btn-large btn-primary" %> 
-						</fieldset>
-						<% end %>
-						<p class="quiet-text">We always answser emails as soon as we can, we do have day jobs too! If you have a problem that requires immediate attention, mention "rush" in your email subject line.</p>
-
-
-							 </div>
-						</div>
-
-						<div class="span4">
-							<div class="alert"><h2><span class='grey'>Heading</span> One</h2>
-
-								<p>Lorem Ipsum is simply dummy
-									text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
-									since the 1500s, when an
-									unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only
-									five centuries, but
-									also the leap into electronic typesetting, remaining essentially unchanged.</p>
-
-									<p> It was popularised in the 1960s with the release
-										of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
-										Aldus PageMaker
-										including versions of Lorem Ipsum.</p></div>
-									</div>
-
-								</div>
-
-								<%= render 'shared/footer' %>
-
-							</div><!-- /container -->
+<%= form_for @message, :url => contact_path do |form| %>
+  <fieldset class="fields">
+    <div class="field">
+      <%= form.label :name %>
+      <%= form.text_field :name %>
+    </div>
+    
+    <div class="field">
+      <%= form.label :email %>
+      <%= form.text_field :email %>
+    </div>
+    <div class="field">
+      <%= form.label :subject %>
+      <%= form.text_field :subject %>
+    </div>
+    
+    <div class="field">
+      <%= form.label :body %>
+      <%= form.text_area :body %>
+    </div>
+  </fieldset>
+  
+  <fieldset class="actions">
+    <%= form.submit "Send" %>
+  </fieldset>
+<% end %>
