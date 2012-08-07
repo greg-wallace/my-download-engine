@@ -7,7 +7,6 @@ gem 'stripe'
 gem 'fetchapp-api-ruby'
 gem 'kumade'
 gem 'bourbon'
-gem 'sqlite3'
 
 
 group :development do
@@ -39,5 +38,5 @@ group :test do
 end
 
 group :production do
- # gem 'pg'
+  gem 'pg'
 end
