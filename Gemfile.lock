@@ -129,6 +129,7 @@ GEM
     multi_xml (0.5.1)
     netrc (0.7.5)
     nokogiri (1.5.5)
+    pg (0.14.0)
     polyglot (0.3.3)
     rack (1.4.1)
     rack-cache (1.2)
@@ -226,6 +227,7 @@ DEPENDENCIES
   jquery-rails
   kumade
   launchy
+  pg
   rails (= 3.2.2)
   rspec-rails
   sass-rails (~> 3.2.3)
